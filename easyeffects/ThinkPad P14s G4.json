@@ -37,7 +37,7 @@
             "bypass": false,
             "input-gain": 0.0,
             "ir-width": 100,
-            "kernel-path": "<PRESETS_DIRECTORY>/irs/T14S_G4_Music_Movies.irs",
+            "kernel-path": "<PRESETS_DIRECTORY>/irs/P14s_G4_Music_Movies.irs",
             "output-gain": 0.0
         },
         "equalizer#0": {

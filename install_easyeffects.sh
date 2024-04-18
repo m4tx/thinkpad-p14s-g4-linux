@@ -24,7 +24,7 @@ check_impulse_response_directory() {
 
 install_presets() {
 	echo "Installing impulse response files..."
-	curl "$GIT_REPOSITORY/easyeffects/T14S_G4_Music_Movies.irs" --output "$PRESETS_DIRECTORY/irs/T14S_G4_Music_Movies.irs" --silent
+	curl "$GIT_REPOSITORY/easyeffects/P14s_G4_Music_Movies.irs" --output "$PRESETS_DIRECTORY/irs/P14s_G4_Music_Movies.irs" --silent
 	echo "Installing ThinkPad P14s G4 preset..."
 	curl "$GIT_REPOSITORY/easyeffects/ThinkPad%20P14s%20G4.json" --output "$PRESETS_DIRECTORY/output/ThinkPad P14s G4.json" --silent
 	sed -i "s|<PRESETS_DIRECTORY>|$PRESETS_DIRECTORY|g" "$PRESETS_DIRECTORY/output/ThinkPad P14s G4.json"
