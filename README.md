@@ -27,3 +27,7 @@ Then, to use it, open EasyEffects, and select one of the "ThinkPad P14s G4" pres
 ## Fan control
 
 To make the fans run quieter, [thinkfan](https://github.com/vmatare/thinkfan) can be used. See [this article](https://blog.monosoul.dev/2021/10/17/how-to-control-thinkpad-p14s-fan-speed-in-linux/) to learn how to configure it - but use this repository's [thinkfan.conf](https://raw.githubusercontent.com/m4tx/thinkpad-p14s-g4-linux/master/thinkfan.conf) file instead. Note that the config assumes you have the AMD version of the laptop (but should be easy enough to modify for the Intel edition, too). Note that increasing the system temperatures might result in shortening the lifespan of the laptop, so use with caution.
+
+## Attribution
+
+The EasyEffects convolver configs are taken from [kurz.pw](https://stuff.kurz.pw/arch/P14s_G4/Speakers/).
