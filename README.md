@@ -12,13 +12,17 @@ Reading the [Arch Wiki article](https://wiki.archlinux.org/title/Lenovo_ThinkPad
 
 ## Sound
 
-The default speaker sound is terrible, so the repository includes an [EasyEffects](https://github.com/wwmm/easyeffects) preset to make it better. This includes a mix of a modified LoudnessEqualizer preset from [Digitalone1/EasyEffects-Presets](https://github.com/Digitalone1/EasyEffects-Presets) and a Music/Movies convolver effect config taken from T14s G3 Windows installation. To install the presets, just run the following command:
+The default speaker sound is terrible, so the repository includes [EasyEffects](https://github.com/wwmm/easyeffects) presets to make it better. This includes:
+* Dynamic, Game, Movie, Music, and Voice presets using convolver effect config taken from P14s G4 Windows installation ("ThinkPad P14s G4 - Dynamic", "ThinkPad P14s G4 - Game", "ThinkPad P14s G4 - Movie", "ThinkPad P14s G4 - Music", "ThinkPad P14s G4 - Voice")
+* A mix of a modified LoudnessEqualizer preset from [Digitalone1/EasyEffects-Presets](https://github.com/Digitalone1/EasyEffects-Presets) and a Music/Movies convolver effect config taken from T14s G3 Windows installation ("ThinkPad P14s G4 - Legacy" preset)
+
+To install the presets, just run the following command:
 
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/m4tx/thinkpad-p14s-g4-linux/master/install_easyeffects.sh)"
 ```
 
-Then, to use it, open EasyEffects, and select the "ThinkPad P14s G4" preset in the "Presets" menu in the upper-left corner of the application window.
+Then, to use it, open EasyEffects, and select one of the "ThinkPad P14s G4" presets in the "Presets" menu in the upper-left corner of the application window.
 
 ## Fan control
 

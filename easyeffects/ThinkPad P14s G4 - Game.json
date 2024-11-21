@@ -1,0 +1,47 @@
+{
+    "output": {
+        "blocklist": [],
+        "convolver#0": {
+            "autogain": true,
+            "bypass": false,
+            "input-gain": 0.0,
+            "ir-width": 100,
+            "kernel-name": "P14s_G4_Game",
+            "output-gain": 0.0
+        },
+        "gate#0": {
+            "attack": 2000.0,
+            "bypass": false,
+            "curve-threshold": -40.0,
+            "curve-zone": -40.0,
+            "dry": -100.0,
+            "hpf-frequency": 10.0,
+            "hpf-mode": "off",
+            "hysteresis": false,
+            "hysteresis-threshold": -12.0,
+            "hysteresis-zone": -6.0,
+            "input-gain": 0.0,
+            "lpf-frequency": 20000.0,
+            "lpf-mode": "off",
+            "makeup": 0.0,
+            "output-gain": 0.0,
+            "reduction": -30.0,
+            "release": 2000.0,
+            "sidechain": {
+                "input": "Internal",
+                "lookahead": 0.0,
+                "mode": "Peak",
+                "preamp": 0.0,
+                "reactivity": 10.0,
+                "source": "Middle",
+                "stereo-split-source": "Left/Right"
+            },
+            "stereo-split": false,
+            "wet": 0.0
+        },
+        "plugins_order": [
+            "gate#0",
+            "convolver#0"
+        ]
+    }
+}

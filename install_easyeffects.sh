@@ -25,9 +25,18 @@ check_impulse_response_directory() {
 install_presets() {
 	echo "Installing impulse response files..."
 	curl "$GIT_REPOSITORY/easyeffects/P14s_G4_Music_Movies.irs" --output "$PRESETS_DIRECTORY/irs/P14s_G4_Music_Movies.irs" --silent
+	curl "$GIT_REPOSITORY/easyeffects/P14s_G4_Dynamic.irs" --output "$PRESETS_DIRECTORY/irs/P14s_G4_Dynamic.irs" --silent
+	curl "$GIT_REPOSITORY/easyeffects/P14s_G4_Game.irs" --output "$PRESETS_DIRECTORY/irs/P14s_G4_Game.irs" --silent
+	curl "$GIT_REPOSITORY/easyeffects/P14s_G4_Movie.irs" --output "$PRESETS_DIRECTORY/irs/P14s_G4_Movie.irs" --silent
+	curl "$GIT_REPOSITORY/easyeffects/P14s_G4_Music.irs" --output "$PRESETS_DIRECTORY/irs/P14s_G4_Music.irs" --silent
+	curl "$GIT_REPOSITORY/easyeffects/P14s_G4_Voice.irs" --output "$PRESETS_DIRECTORY/irs/P14s_G4_Voice.irs" --silent
 	echo "Installing ThinkPad P14s G4 preset..."
-	curl "$GIT_REPOSITORY/easyeffects/ThinkPad%20P14s%20G4.json" --output "$PRESETS_DIRECTORY/output/ThinkPad P14s G4.json" --silent
-	sed -i "s|<PRESETS_DIRECTORY>|$PRESETS_DIRECTORY|g" "$PRESETS_DIRECTORY/output/ThinkPad P14s G4.json"
+	curl "$GIT_REPOSITORY/easyeffects/ThinkPad%20P14s%20G4%20-%20Legacy.json" --output "$PRESETS_DIRECTORY/output/ThinkPad P14s G4 - Legacy.json" --silent
+	curl "$GIT_REPOSITORY/easyeffects/ThinkPad%20P14s%20G4%20-%20Dynamic.json" --output "$PRESETS_DIRECTORY/output/ThinkPad P14s G4 - Dynamic.json" --silent
+	curl "$GIT_REPOSITORY/easyeffects/ThinkPad%20P14s%20G4%20-%20Game.json" --output "$PRESETS_DIRECTORY/output/ThinkPad P14s G4 - Game.json" --silent
+	curl "$GIT_REPOSITORY/easyeffects/ThinkPad%20P14s%20G4%20-%20Movie.json" --output "$PRESETS_DIRECTORY/output/ThinkPad P14s G4 - Movie.json" --silent
+	curl "$GIT_REPOSITORY/easyeffects/ThinkPad%20P14s%20G4%20-%20Music.json" --output "$PRESETS_DIRECTORY/output/ThinkPad P14s G4 - Music.json" --silent
+	curl "$GIT_REPOSITORY/easyeffects/ThinkPad%20P14s%20G4%20-%20Voice.json" --output "$PRESETS_DIRECTORY/output/ThinkPad P14s G4 - Voice.json" --silent
 }
 
 check_installation
