@@ -5,7 +5,7 @@ on:
   pull_request:
 
 jobs:
-  pre-commit:
+  prek:
     # Run on external PRs and pushes to branches on the repo
     # This is to avoid double running on PRs from internal branches
     if:
@@ -15,13 +15,8 @@ jobs:
     name: Linting Checks
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
+      - name: Checkout source
+        uses: actions/checkout@v7
 
-      - name: Install python
-        uses: actions/setup-python@v6
-        with:
-          python-version: "3.11"
-
-      - name: Check files
-        uses: pre-commit/action@v3.0.1
+      - name: Run prek
+        uses: j178/prek-action@v2
